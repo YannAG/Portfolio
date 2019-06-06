@@ -1,5 +1,11 @@
 body {
-    background-color: azure;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/imgs/black.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
 }
 
 .navbar-collapse ul {
@@ -11,15 +17,17 @@ body {
 }
 
 .navbar-default {
-    background-color: rgba(0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar a {
     border: outset;
     border: 1px solid;
+    padding: 10px;
     text-transform: uppercase;
     overflow: hidden;
     transition: 1s all ease;
+    background-color: #000000;
     color: rgb(63, 245, 8);
 }
 
@@ -31,7 +39,7 @@ body {
 
 header h1 {
     font-family: sans-serif;
-    margin-top: 50px;
+    margin-top: 75px;
     padding-top: 20px;
     font-size: 50px;
     font-weight: bold;
@@ -53,13 +61,21 @@ section h2 {
 }
 
 .bg-default {
-    background-color: rgba(0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .portfolio h2,
 .contact h2 {
     font-size: 50px;
-    color: #e84118 !important;
+    color: #dcdce2b7 !important;
+}
+
+h5 {
+    font-size: 20px;
+    position: relative;
+    left: 420px;
+    margin-bottom: 150px;
+    color: cornflowerblue;
 }
 
 .contact h2 {
@@ -83,11 +99,13 @@ section h2 {
 
 .portfolio-item p {
     text-align: justify;
+    color: aquamarine
 }
 
 .portfolio-item a {
+    text-decoration: none;
     font-weight: bold;
-    color: orangered;
+    color: #ffffff;
 }
 
 .about h2 {
@@ -119,7 +137,7 @@ section h2 {
 
 .footer-port {
     width: 100%;
-    background-color: olive;
+    background-color: rgba(0, 0, 0, 0);
     padding: 40px;
 }
 
@@ -146,7 +164,7 @@ section h2 {
 }
 
 .footer-port ul li a:hover {
-    color: #000000;
+    color: #42ff08;
 }
 
 .copyright {
@@ -174,6 +192,10 @@ section h2 {
     color: #fff;
 }
 
+label {
+    color: #ddd;
+}
+
 .box {
     position: relative;
     border-style: outset;
@@ -193,19 +215,31 @@ section h2 {
     align-items: center;
 }
 
-.inp {
-    border-radius: 10px;
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    border: transparent;
 }
 
-.int {
-    border-radius: 15px;
-    margin: 0px;
-    padding: 0px;
+.topnav .search-container button {
     position: fixed;
-    right: 865px;
-    background-color: #48ff00;
+    padding: 6px 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    top: 24px;
+    left: 439px;
+    ;
 }
 
-.int:hover {
-    background-color:
+.topnav .search-container button:hover {
+    background: rgb(3, 207, 156);
 }
